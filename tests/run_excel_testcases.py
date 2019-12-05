@@ -15,7 +15,7 @@ from basic.intergrate_request import IntergrateRequest
 from util.email_config import EmailConfig
 from util.operate_json import OperateJson
 from util.compare_str import CompareStr
-
+from util.dependent_data import DependentData
 
 class RunExcelTestcases(object):
     def __init__(self):
@@ -24,6 +24,7 @@ class RunExcelTestcases(object):
         self.ec = EmailConfig()
         self.oj = OperateJson()
         self.cs = CompareStr()
+
 
     # 执行测试用例
     def run_testcases(self):
@@ -39,31 +40,37 @@ class RunExcelTestcases(object):
         for case in range(1, cases_num):
             # 用例是否执行
             is_run = self.gtc.get_is_run(case)
-            # print("is_run: ", is_run)
             # 接口的请求方式
             method = self.gtc.get_method(case)
-            # 请求测试接口
+            # 请求测试接口url
             url = self.gtc.get_url(case)
+            header = self.gtc.is_header(case)
             # 要请求的数据
-            data = self.gtc.get_payload(case)
-            depend_case = self.gtc.is_depend(case)
+            # data = self.gtc.get_payload(case)
+            # depend_case = self.gtc.is_depend(case)
             # 将参数写到json文件里
-            # data = self.gtc.get_data_for_json(case)
+            data = self.gtc.get_data_for_json(case)
 
             # 取出 header
-            if case == 1:
-                header = None
-            else:
-                header = self.oj.get_json()
-
-            if depend_case != None:
-                pass
+            # if case == 1:
+            #     header = None
+            # else:
+            #     header = self.oj.get_json()
 
             # 获取预期结果值 expected_result
             expected_result = self.gtc.get_expected_result(case)
 
+            # if depend_case != None:
+            #     # 响应数据
+            #     self.depend_data = DependentData()
+            #     depend_response_data = self.depend_data.get_data_for_key(case)
+            # #     获取依赖的key
+            #     depend_key = self.gtc.get_depend_field(case)
+            #     data[depend_key] = depend_response_data
+
             if is_run is True:
                 res = self.ir.main_req(method, url, data, header)
+                print(res)
                 if self.cs.is_contain(expected_result, res):
                     self.gtc.write_actual_result(case, 'pass')
                     pass_lists.append(case)

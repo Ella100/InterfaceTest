@@ -3,6 +3,7 @@ from util.operate_excel import OperateExcel
 from basic.intergrate_request import IntergrateRequest
 from basic.get_excel_testcases import GetExcelTestcases
 from jsonpath_rw import jsonpath,parse
+import json
 
 class DependentData:
     def __init__(self,case_id):
@@ -24,7 +25,7 @@ class DependentData:
         method = self.data.get_method(row_num)
         url = self.data.get_url(row_num)
         res = run_method.main_req(method,url,request_data,header)
-        return res
+        return json.loads(res)
 
     # 根据依赖的key去获取执行依赖测试case的响应，然后返回
     def get_data_for_key(self,row):

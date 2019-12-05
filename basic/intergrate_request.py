@@ -9,17 +9,17 @@ class IntergrateRequest(object):
     # 请求 request方法
     def get_req(self, url, data=None, header=None):
         if header is not None:
-            res = requests.get(url, json=data, headers=header)
+            res = requests.get(url, data=data, headers=header)
         else:
-            res = requests.get(url, json=data);
+            res = requests.get(url, data=data);
         return res.json()
 
     # post 请求方式
     def post_req(self, url, data=None, header=None):
         if header is not None:
-            res = requests.post(url=url, json=data, headers=header)
+            res = requests.post(url=url, data=data, headers=header)
         else:
-            res = requests.post(url=url, json=data)
+            res = requests.post(url=url, data=data)
         try:
             return res.json()
         except json.JSONDecodeError as e:
@@ -28,9 +28,9 @@ class IntergrateRequest(object):
     # delete 请求方式
     def delete_req(self, url, data=None, header=None):
         if header is not None:
-            res = requests.delete(url, json=data, headers=header)
+            res = requests.delete(url, data=data, headers=header)
         else:
-            res = requests.delete(url, json=data)
+            res = requests.delete(url, data=data)
         return res.json()
 
     def main_req(self, method, url, data=None, header=None):
@@ -48,8 +48,10 @@ class IntergrateRequest(object):
 if __name__ == "__main__":
     ir = IntergrateRequest()
     method = 'get'
-    url = 'http://127.0.0.1:7999/'
-    data = None
+    url = 'http://localhost:7998/getuser'
+    data = {
+        "userid": 4
+    }
     header = None
     print(ir.main_req(method, url, data, header))
 

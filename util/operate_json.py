@@ -9,7 +9,6 @@ print(curPath)
 rootPath = os.path.abspath(os.path.dirname(curPath))
 print(rootPath)
 
-
 class OperateJson(object):
     def __init__(self, file_name=None):
         if file_name:
@@ -23,7 +22,7 @@ class OperateJson(object):
 
     # 读取 json 文件
     def get_json(self):
-        with open(self.file_name, encoding='utf-8') as fp:
+        with open(self.file_name) as fp:
             data = json.load(fp)
         return data
 
@@ -31,14 +30,6 @@ class OperateJson(object):
     def get_key_data(self, key):
         return self.data[key]
 
-
 if __name__ == '__main__':
-    oj = OperateJson("../data/TestcaseHeaders.json")
-    print(oj.get_json())
-    # oj = OperateJson()
-    # print('login: ', oj.get_key_data("login"))
-    # print('login.username: ', oj.get_key_data("login")["username"])
-    # print('login.password: ', oj.get_key_data("login")["username"])
-    # print('logout: ', oj.get_key_data("logout"))
-    # print('logout.code: ', oj.get_key_data("logout")["code"])
-    # print('logout.info: ', oj.get_key_data("logout")["info"])
+    oj = OperateJson()
+    print(oj.get_key_data("login"))

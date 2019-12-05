@@ -11,10 +11,10 @@ class TestcasesKeyword(object):
     HEADER = '5'
     PAYLOAD = '6'
     EXPECTED_RESULT = '7'
-    ACTUAL_RESULT = '9'
-    CASE_DEPEND = '10'
-    DATA_DEPEND = '11'
-    FIELD_DEPEND = '12'
+    ACTUAL_RESULT = '8'
+    CASE_DEPEND = '9'
+    DATA_DEPEND = '10'
+    FIELD_DEPEND = '11'
 
 # 获取自动化用例 ID
 def get_case_id():

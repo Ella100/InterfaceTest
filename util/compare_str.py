@@ -15,7 +15,9 @@ class CompareStr(object):
             flag = False
         return flag
 
-
 if __name__ == "__main__":
     cs = CompareStr()
-    print(cs.is_contain("abc", "abcedf"))
+    print(cs.is_contain("{'msg':'没有这个用户'}", "{'code':'500','msg':'没有这个用户'}"))
+
+
+

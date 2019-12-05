@@ -16,10 +16,9 @@ class GetExcelTestcases(object):
     def is_header(self, row):
         col = int(testcases_keyword.get_header())
         header = self.oe.get_sheet_cell(row, col)
-        if header is not None:
+        if header == 'y':
             return header
         else:
-            print("你的 header 呢？")
             return None
 
     # 判断该条用例是否执行
@@ -45,7 +44,7 @@ class GetExcelTestcases(object):
         url = self.oe.get_sheet_cell(row, col)
         return url
 
-    # 获取接口参数
+    # 获取请求数据(接口参数)
     def get_payload(self, row):
         col = int(testcases_keyword.get_payload())
         payload = self.oe.get_sheet_cell(row, col)
@@ -56,7 +55,7 @@ class GetExcelTestcases(object):
     #通过获取关键字拿到json文件里的data
     def get_data_for_json(self,row):
         opera_json = OperateJson()
-        request_data = opera_json.get_json(self.get_payload(row))
+        request_data = opera_json.get_key_data(self.get_payload(row))
         return request_data
 
     # 获取预期结果
@@ -89,10 +88,20 @@ class GetExcelTestcases(object):
         else:
             return depend_case_id
 
+#     获取数据依赖字段
+    def get_depend_field(self,row):
+        col = int(testcases_keyword.get_field_depend())
+        data = self.oe.get_sheet_cell(row,col)
+        if data == "":
+            return None
+        else:
+            return data
+
 if __name__ == "__main__":
     gety = GetExcelTestcases()
-    print(gety.get_cases_num())
-    print(gety.is_header(1))
-    print(gety.get_is_run(4))
+    # print(gety.get_cases_num())
+    # print(gety.is_header(1))
+    # print(gety.get_is_run(4))
+    # print(gety.get_data_for_json(1))
 
 
