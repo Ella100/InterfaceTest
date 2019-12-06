@@ -4,13 +4,15 @@
     <list default="true" id="3a277b34-ce74-41b6-b5d5-50cde0aae5ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/get_excel_testcases.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/get_excel_testcases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/intergrate_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/intergrate_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/testcases_keyword.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/testcases_keyword.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/TestcaseHeaders.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/TestcaseHeaders.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/TestcasesKeyword.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/TestcasesKeyword.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/util_data/operate_excel.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/util_data/operate_json.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/run_excel_testcases.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_excel_testcases.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/compare_str.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/compare_str.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/dependent_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/dependent_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/operate_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/operate_excel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/operate_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/operate_json.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +27,7 @@
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$testcases_keyword.coverage" NAME="testcases_keyword Coverage Results" MODIFIED="1575253637911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic" />
     <SUITE FILE_PATH="coverage/InterfaceTesting$get_excel_testcases.coverage" NAME="get_excel_testcases Coverage Results" MODIFIED="1575509400001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic" />
     <SUITE FILE_PATH="coverage/InterfaceTesting$intergrate_request.coverage" NAME="intergrate_request Coverage Results" MODIFIED="1575538984973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic" />
-    <SUITE FILE_PATH="coverage/InterfaceTesting$dependent_data.coverage" NAME="dependent_data Coverage Results" MODIFIED="1575453006792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/InterfaceTesting$dependent_data.coverage" NAME="dependent_data Coverage Results" MODIFIED="1575616995033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$run_excel_testcases.coverage" NAME="run_excel_testcases Coverage Results" MODIFIED="1575451676580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$operate_excel.coverage" NAME="operate_excel Coverage Results" MODIFIED="1575451666388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$manage.coverage" NAME="manage Coverage Results" MODIFIED="1575255185633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/InterfaceTestingMock" />
@@ -33,9 +35,9 @@
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$intergrate_request.coverage" NAME="intergrate_request Coverage Results" MODIFIED="1575253355406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic" />
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$operate_json.coverage" NAME="operate_json Coverage Results" MODIFIED="1575254266356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/InterfaceTesting$operate_json.coverage" NAME="operate_json Coverage Results" MODIFIED="1575457136968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/InterfaceTesting$run_excel_testcases.coverage" NAME="run_excel_testcases Coverage Results" MODIFIED="1575547318723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/InterfaceTesting$run_excel_testcases.coverage" NAME="run_excel_testcases Coverage Results" MODIFIED="1575617165705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/InterfaceTesting_master$compare_str.coverage" NAME="compare_str Coverage Results" MODIFIED="1575373680823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/InterfaceTesting$compare_str.coverage" NAME="compare_str Coverage Results" MODIFIED="1575547872875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/InterfaceTesting$compare_str.coverage" NAME="compare_str Coverage Results" MODIFIED="1575593592243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/InterfaceTesting$test.coverage" NAME="test Coverage Results" MODIFIED="1575538638930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic" />
   </component>
   <component name="FileEditorManager">
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/get_excel_testcases.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="61" column="27" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="1120">
+              <caret line="98" column="23" lean-forward="true" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
               <folding>
                 <element signature="e#48#91#0" expanded="true" />
               </folding>
@@ -53,28 +55,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/compare_str.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/intergrate_request.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/testcases_keyword.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="-44">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -82,17 +66,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/run_excel_testcases.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1288">
-              <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+            <state relative-caret-position="1553">
+              <caret line="74" column="30" lean-forward="true" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/email_config.py">
+        <entry file="file://$PROJECT_DIR$/util/dependent_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="184">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/compare_str.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -100,8 +93,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/operate_excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+            <state relative-caret-position="174">
+              <caret line="61" column="26" selection-start-line="60" selection-start-column="6" selection-end-line="61" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/python37/Lib/site-packages/xlrd/sheet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="534" column="18" selection-start-line="534" selection-start-column="8" selection-end-line="534" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -109,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/operate_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="74">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
               <folding>
                 <element signature="e#48#59#0" expanded="true" />
               </folding>
@@ -121,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/TestcaseHeaders.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="253">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -145,25 +147,25 @@
         <option value="$PROJECT_DIR$/app/baidu_translate/baidu_translate.py" />
         <option value="$PROJECT_DIR$/util/operate_mysql.py" />
         <option value="$PROJECT_DIR$/InterfaceTestingMock/tests/interface_crud_tests.py" />
-        <option value="$PROJECT_DIR$/util/operate_excel.py" />
         <option value="$PROJECT_DIR$/util/email_config.py" />
-        <option value="$PROJECT_DIR$/util/dependent_data.py" />
         <option value="$PROJECT_DIR$/util/operate_json2.py" />
-        <option value="$PROJECT_DIR$/util/operate_json.py" />
-        <option value="$PROJECT_DIR$/basic/get_excel_testcases.py" />
         <option value="$PROJECT_DIR$/basic/test.py" />
         <option value="$PROJECT_DIR$/basic/intergrate_request.py" />
-        <option value="$PROJECT_DIR$/basic/testcases_keyword.py" />
-        <option value="$PROJECT_DIR$/tests/run_excel_testcases.py" />
         <option value="$PROJECT_DIR$/util/compare_str.py" />
+        <option value="$PROJECT_DIR$/basic/testcases_keyword.py" />
+        <option value="$PROJECT_DIR$/util/operate_json.py" />
+        <option value="$PROJECT_DIR$/util/operate_excel.py" />
+        <option value="$PROJECT_DIR$/basic/get_excel_testcases.py" />
         <option value="$PROJECT_DIR$/data/TestcaseHeaders.json" />
+        <option value="$PROJECT_DIR$/tests/run_excel_testcases.py" />
+        <option value="$PROJECT_DIR$/util/dependent_data.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="651" />
-    <option name="width" value="1334" />
-    <option name="height" value="1044" />
+    <option name="x" value="749" />
+    <option name="width" value="1360" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -228,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.compare_str">
+  <component name="RunManager" selected="Python.run_excel_testcases">
     <configuration name="compare_str" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InterfaceTesting-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,7 +253,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_excel_testcases" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dependent_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InterfaceTesting-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,12 +261,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/basic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic/get_excel_testcases.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/dependent_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -341,18 +343,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.run_excel_testcases" />
-      <item itemvalue="Python.get_excel_testcases" />
       <item itemvalue="Python.intergrate_request" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.compare_str" />
+      <item itemvalue="Python.dependent_data" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.compare_str" />
         <item itemvalue="Python.run_excel_testcases" />
+        <item itemvalue="Python.dependent_data" />
+        <item itemvalue="Python.compare_str" />
         <item itemvalue="Python.intergrate_request" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.get_excel_testcases" />
       </list>
     </recent_temporary>
   </component>
@@ -370,8 +372,16 @@
       <workItem from="1574823862270" duration="16361000" />
       <workItem from="1575340010595" duration="625000" />
       <workItem from="1575365562236" duration="13533000" />
-      <workItem from="1575452056485" duration="19576000" />
+      <workItem from="1575452056485" duration="36927000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1575547999384</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575547999384</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -386,18 +396,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53650000" />
+    <option name="totallyTimeSpent" value="71001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="749" y="0" width="1360" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17060086" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16459627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291714" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30691963" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3382353" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16704546" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21540178" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -440,18 +451,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/baidu_fanyi_demo.py" />
     <entry file="file://$PROJECT_DIR$/app/baidu_translate/baidu_translate.py" />
     <entry file="file://$PROJECT_DIR$/app/urllib_request.py" />
     <entry file="file://$PROJECT_DIR$/requests_doc/requests_transfer_parameter.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python37/Lib/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -492,20 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python37/Lib/site-packages/xlrd/sheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="490" column="8" selection-start-line="490" selection-start-column="8" selection-end-line="490" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/util_data/operate_json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -550,50 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/operate_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="e#48#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/operate_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/dependent_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#14#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/get_excel_testcases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="27" />
-          <folding>
-            <element signature="e#48#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TestcaseHeaders.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/email_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -601,31 +551,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/intergrate_request.py">
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-51962858/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        <state relative-caret-position="209">
+          <caret line="3628" column="8" selection-start-line="3628" selection-start-column="8" selection-end-line="3628" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/testcases_keyword.py">
+    <entry file="file://D:/python37/Lib/site-packages/xlwt/CompoundDoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="106">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/compare_str.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="407">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/operate_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/util_data/operate_json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python37/Lib/site-packages/xlrd/sheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="534" column="18" selection-start-line="534" selection-start-column="8" selection-end-line="534" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/intergrate_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/operate_excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="61" column="26" selection-start-line="60" selection-start-column="6" selection-end-line="61" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/get_excel_testcases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="98" column="23" lean-forward="true" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+          <folding>
+            <element signature="e#48#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/testcases_keyword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TestcaseHeaders.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/dependent_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/run_excel_testcases.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+        <state relative-caret-position="1553">
+          <caret line="74" column="30" lean-forward="true" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
         </state>
       </provider>
     </entry>

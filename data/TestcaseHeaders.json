@@ -1,7 +1,22 @@
-{"login":{"userid":1},
+{
   "login1": {
-    "loginname": "18578260535",
-    "loginpwd": "qq123456",
+    "loginname": "13005771003",
+    "loginpwd": "tretar0814",
     "userFlage": 1
+  },
+  "login2": {
+	"walletId":"2060782000213003811",
+	"accountNo":"6227008888888444700",
+	"accountName":"王天鹏",
+	"accountType":"00",
+	"idType":"0",
+	"idNo":"63010119450601271X",
+	"tel":"18578260535",
+	"accountProp":"0"
+  },
+  "addBankCard": {
+	"walletId":"2060782000213003811",
+	"oriReqSn":"201911220000028064547921424029",
+	"verifyCode":"111111"
   }
 }

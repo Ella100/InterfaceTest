@@ -47,7 +47,8 @@ class RunExcelTestcases(object):
             header = self.gtc.is_header(case)
             # 要请求的数据
             # data = self.gtc.get_payload(case)
-            # depend_case = self.gtc.is_depend(case)
+            # 获取依赖
+            depend_case = self.gtc.is_depend(case)
             # 将参数写到json文件里
             data = self.gtc.get_data_for_json(case)
 
@@ -60,17 +61,17 @@ class RunExcelTestcases(object):
             # 获取预期结果值 expected_result
             expected_result = self.gtc.get_expected_result(case)
 
-            # if depend_case != None:
-            #     # 响应数据
-            #     self.depend_data = DependentData()
-            #     depend_response_data = self.depend_data.get_data_for_key(case)
-            # #     获取依赖的key
-            #     depend_key = self.gtc.get_depend_field(case)
-            #     data[depend_key] = depend_response_data
+
+            if depend_case != None:
+                self.depend_data = DependentData()
+                depend_response_data = self.depend_data.get_data_for_key(case)  #响应数据
+                depend_key = self.gtc.get_depend_field(case)  #依赖key
+                data[depend_key] = depend_response_data
 
             if is_run is True:
                 res = self.ir.main_req(method, url, data, header)
                 print(res)
+
                 if self.cs.is_contain(expected_result, res):
                     self.gtc.write_actual_result(case, 'pass')
                     pass_lists.append(case)
@@ -79,9 +80,9 @@ class RunExcelTestcases(object):
                     fail_lists.append(case)
             else:
                 no_execute_lists.append(case)
-        print("没有执行的测试用例, 按序号有：", no_execute_lists)
-        self.ec.send_mail(pass_lists, fail_lists, no_execute_lists)
-        print("....邮件已发送成功...")
+        # print("没有执行的测试用例, 按序号有：", no_execute_lists)
+        # self.ec.send_mail(pass_lists, fail_lists, no_execute_lists)
+        # print("....邮件已发送成功...")
 
 
 if __name__ == "__main__":

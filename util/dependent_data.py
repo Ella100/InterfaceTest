@@ -19,11 +19,14 @@ class DependentData:
     # 执行依赖测试，获取结果
     def run_dependent(self):
         run_method = IntergrateRequest()
-        row_num = self.operate_excel.get_row_num(self.case_id)  #拿行号
+        # 拿行号
+        row_num = self.operate_excel.get_row_num(self.case_id)
+        # 请求数据
         request_data = self.data.get_data_for_json(row_num)
         header = self.data.is_header(row_num)
         method = self.data.get_method(row_num)
         url = self.data.get_url(row_num)
+        # 执行
         res = run_method.main_req(method,url,request_data,header)
         return json.loads(res)
 
@@ -31,6 +34,20 @@ class DependentData:
     def get_data_for_key(self,row):
         depend_data = self.data.get_depend_key(row)
         response_data = self.run_dependent()
+        # 根据层级关系去拿值
         json_exe = parse(depend_data)
         madle = json_exe.find(response_data)#结果集
         return [math.value for math in madle][0]
+
+if __name__ == "__main__":
+    o = DependentData("A0002")
+    print(o.get_case_line_data())
+
+    order = {
+        "oriReqSn": "201912060000028126533628963713",
+        "isSuccess": "true"
+    }
+    res = "oriReqSn"
+    json_exe = parse(res)
+    madle = json_exe.find(order)
+    print([math.value for math in madle][0])

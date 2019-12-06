@@ -71,7 +71,7 @@ class GetExcelTestcases(object):
         col = int(testcases_keyword.get_actual_result())
         self.oe.write_to_excel(row, col, value)
 
-#     获取依赖数据的key
+    #     获取依赖数据的key
     def get_depend_key(self,row):
         col = int(testcases_keyword.get_data_depend())
         depend_key = self.oe.get_sheet_cell(row,col)
@@ -79,7 +79,8 @@ class GetExcelTestcases(object):
             return None
         else:
             return depend_key
-#     判断是否有case依赖
+
+    #     判断是否有case依赖
     def is_depend(self,row):
         col = int(testcases_keyword.get_field_depend())
         depend_case_id = self.oe.get_sheet_cell(row,col)
@@ -88,7 +89,7 @@ class GetExcelTestcases(object):
         else:
             return depend_case_id
 
-#     获取数据依赖字段
+    #     获取数据依赖字段
     def get_depend_field(self,row):
         col = int(testcases_keyword.get_field_depend())
         data = self.oe.get_sheet_cell(row,col)

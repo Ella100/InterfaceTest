@@ -83,10 +83,10 @@ class OperateExcel(object):
 #   根据对应的caseId找到对应行的内容
     def get_rows_data(self,case_id):
         row_num = self.get_row_num(case_id)
-        row_data = self.get_row_values(row_num)
-        return row_data
+        rows_data = self.get_row_values(row_num)
+        return rows_data
 
-#     根据对应的caseId找到对应的行号
+    # 根据对应的caseId找到对应的行号
     def get_row_num(self,case_id):
         num = 0
         clos_data = self.get_cols_data()
@@ -95,16 +95,17 @@ class OperateExcel(object):
                 return num
             num = num + 1
 
-#     根据行号找到该行的内容
+    #根据行号找到该行的内容
     def get_row_values(self,row):
-        return self.sheet_table.row_values(row)
+        row_data = self.sheet_table.row_values(row)
+        return row_data
 
-# 获取某一列的内容
+    # 获取某一列的内容
     def get_cols_data(self,col_id=None):
         if col_id != None:
-            cols = self.sheet_table.cell_value(col_id)
+            cols = self.sheet_table.col_values(col_id)
         else:
-            cols = self.sheet_table.cell_value(0)
+            cols = self.sheet_table.col_values(0)
         return cols
 
 if __name__ == "__main__":

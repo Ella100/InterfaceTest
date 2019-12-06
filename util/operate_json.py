@@ -22,7 +22,7 @@ class OperateJson(object):
 
     # 读取 json 文件
     def get_json(self):
-        with open(self.file_name) as fp:
+        with open(self.file_name,encoding='UTF-8') as fp:
             data = json.load(fp)
         return data
 
