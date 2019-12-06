@@ -79,6 +79,7 @@ class RunExcelTestcases(object):
                     self.gtc.write_actual_result(case, 'fail')
                     fail_lists.append(case)
             else:
+                self.gtc.write_actual_result(case, 'none')
                 no_execute_lists.append(case)
         # print("没有执行的测试用例, 按序号有：", no_execute_lists)
         # self.ec.send_mail(pass_lists, fail_lists, no_execute_lists)

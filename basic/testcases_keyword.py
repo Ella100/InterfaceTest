@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 # 指定具体的单元格位置
+import os
+
+parentDirPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# 测试数据文件存放绝对路径
+work_dir = parentDirPath + "\\data"
 
 class TestcasesKeyword(object):
     CASE_ID = '0'

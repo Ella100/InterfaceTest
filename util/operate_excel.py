@@ -54,6 +54,10 @@ class OperateExcel(object):
     def get_sheet_nrows(self):
         return self.sheet_table.nrows
 
+    def getRowsNumber(self, sheet):
+        # 获取sheet中有数据区域的结束行号
+        return sheet.max_row
+
     # 获取该 sheet 页的列数
     def get_sheet_ncols(self):
         return self.sheet_table.ncols
